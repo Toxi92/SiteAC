@@ -21,7 +21,7 @@ jobs:
         run: npm install -g @axe-core/cli
 
       - name: Run axe accessibility tests
-        run: axe ../ --exit
+        run: axe https://toxi92.github.io/SiteAC/ --exit
 
   deploy:
     needs: test-accessibility
