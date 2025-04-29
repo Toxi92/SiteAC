@@ -21,7 +21,7 @@ jobs:
         run: npm install -g @axe-core/cli
 
       - name: Run axe accessibility tests
-        run: axe index.html --exit
+        run: axe ../ --exit
 
   deploy:
     needs: test-accessibility
